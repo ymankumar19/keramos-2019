@@ -1,0 +1,68 @@
+.background{
+    position: relative;
+    top: 5%;
+    left: 25%;
+    transform-origin: left top;
+    
+   
+}
+.layer{
+    position: absolute;
+    transform-origin: center center;
+    width: 70vh;
+    height: auto;
+    transition: scale 1s ease-in;
+
+}
+.a{
+  width: 75vh; 
+  left: 0; 
+  animation: anim_rotate 2.5s linear infinite;
+}
+.b{
+  width: 60vh; 
+  left:49px;
+  top: 55px; 
+  animation: anim_rotate 2.5s linear infinite reverse;
+  
+}
+.c{
+  width: 43vh;
+  left:103px;
+  top: 107px; 
+  animation: anim_rotate 2.5s cubic-bezier(0.22, 1.61, 0.65, 1) infinite alternate-reverse;  
+}
+.d{
+  width: 23vh;  
+  left:173px;
+  top: 174px; 
+}
+.e{
+    width: 70vh;
+    left: 30px;
+   top: 77vh;
+}
+
+@keyframes anim_rotate{
+    from{
+        transform:rotate(0deg) ;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes anim_scale{
+    from{
+
+        transform: scale(1);
+        top: 5%;
+        left: 25% ;
+       
+    }
+    to{
+        transform: scale(0.1);
+        top: 35px;
+        left: 35px;
+        
+    }
+}
